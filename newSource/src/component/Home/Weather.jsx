@@ -20,7 +20,7 @@ const Weather = () => {
         return <div>Loading...</div>;
     }
 
-    let temperatureC = (weatherData.temperature - 32) * 5 / 9;
+    let temperatureC = ((weatherData.temperature - 32) * 5 / 9).toFixed(1);
 
     return (
         <div className="group relative w-50">
