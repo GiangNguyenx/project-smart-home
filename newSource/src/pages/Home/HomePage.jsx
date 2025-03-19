@@ -1,10 +1,10 @@
 import {React} from "react";
-import Card from "../../component/Home/Card.jsx";
-import Lock from "../../component/Home/Lock.jsx";
-import Next from "../../component/Home/Next.jsx";
-import Add from "../../component/Home/Add.jsx";
-import DropDown from "../../component/Home/DropDown.jsx";
-import Weather from "../../component/Home/Weather.jsx";
+import Card from "../../component/Home/Card";
+import Lock from "../../component/Home/Lock";
+import Next from "../../component/Home/Next";
+import Add from "../../component/Home/Add";
+import DropDown from "../../component/Home/DropDown";
+import Weather from "../../component/Home/Weather";
 import Notify from "../Home/component/Notify"
 import Members from "./component/Members";
 import Chart from "./component/Chart";
@@ -14,6 +14,8 @@ import SlideBar from "./component/SlideBar";
 import DeviceSensor from "./component/DeviceSensor";
 import Header from "./component/Header";
 import DeviceControl from "./component/DeviceControl";
+
+import Upload from "../../component/Upload"
 
 
 export const HomePage = () => {
@@ -33,6 +35,8 @@ export const HomePage = () => {
 
                     {/*This is the Members component*/}
                     <Members/>
+
+                    <Upload/>
                     <div className="absolute top-[463px] left-[1067px] flex items-center [font-family:'Roboto-Bold',Helvetica] font-bold text-[#000000] text-xl tracking-[0.20px] leading-[normal] whitespace-nowrap">
                         Members
                         <div className="relative z-10 ml-[282px]">
